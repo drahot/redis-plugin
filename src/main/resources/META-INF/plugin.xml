@@ -1,12 +1,9 @@
 <idea-plugin>
     <id>io.github.drahot.redis-plugin</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>Redis Explorer</name>
+    <vendor email="hotterdragon@gmail.com" url="https://github.com/drahot/redis-plugin">DraHot</vendor>
 
-    <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
-    ]]></description>
+    <description><![CDATA[IntelliJ Redis Manipulate Plugin]]></description>
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
          on how to target different products -->
@@ -18,5 +15,7 @@
 
     <actions>
         <!-- Add your actions here -->
+        <action id="AddRedisAction" class="io.github.drahot.redis_plugin.actions.AddRedisAction" text="Add Redis Database" icon="AllIcons.General.Add"/>
+        <action id="RemoveRedisAction" class="io.github.drahot.redis_plugin.actions.RemoveRedisAction" text="Remove Redis Database" icon="AllIcons.General.Remove" />
     </actions>
 </idea-plugin>
