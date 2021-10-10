@@ -9,19 +9,13 @@ private const val DEFAULT_REDIS_PORT = 6379
 
 /**
  * SSHTunnel
- *
- * @property host
- * @property user
- * @property password
- * @property port
- * @property identity
  */
 @Suppress("unused")
 class SSHTunnel(
-    private val host: String,
-    private val user: String,
+    host: String,
+    user: String,
     private val password: String? = null,
-    private val port: Int = DEFAULT_SSH_PORT,
+    port: Int = DEFAULT_SSH_PORT,
     private val identity: String? = null
 ) {
 

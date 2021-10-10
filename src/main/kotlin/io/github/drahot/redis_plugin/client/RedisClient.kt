@@ -6,14 +6,11 @@ import redis.clients.jedis.params.SetParams
 
 /**
  * RedisClient
- *
- * @property host
- * @property port
  */
 @Suppress("unused")
 class RedisClient(
-    private val host: String,
-    private val port: Int
+    host: String,
+    port: Int
 ) {
 
     private val jedis = Jedis(host, port)
