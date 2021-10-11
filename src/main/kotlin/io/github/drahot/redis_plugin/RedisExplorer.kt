@@ -30,6 +30,7 @@ class RedisExplorer(project: Project) : SimpleToolWindowPanel(true, true) {
 
 //        fun buildTree(project: Project, backgroundColor: Color): Tree {
 //            val top = DefaultMutableTreeNode("Root Node")
+//
 //        }
     }
 }
